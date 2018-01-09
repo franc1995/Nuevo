@@ -20,10 +20,44 @@ This package can be used to read and manage data from the US National Highway Tr
 
 ## Importing data
 
-FARS data can be imported using the `fars_read` function:
+FARS data can be imported using the `fars_read_years` function:
 
 ```{r read}
 library(fars)
-file <- make_filename(2016)
-fars_data <- fars_read(file)
+fars_data <- fars_read(make_filename(2014))
+```
+
+This file contains many information regarind the traffic accidents. The fields contained in the dataframe are
+
+```{r sample}
+library(magrittr)
+library(knitr)
+fars_data %>%
+  names() %>%
+  kable(col.names = 'Columns')
+``` 
+
+## Other usages
+
+The package also contains functions for calculating the summary for a set of years:
+
+```{r summary}
+fars_summarize_years(2013:2015) %>%
+  kable()
+```
+
+And also the capability of plotting data into a map. In this case, the State is to be selected by the State ID.
+
+
+
+For the case of California (ID = 6)
+
+```{r map}
+fars_map_state(6, 2015)
+```
+
+For the case of New York (ID 36)
+
+```{r map2}
+fars_map_state(36, 2015)
 ```
