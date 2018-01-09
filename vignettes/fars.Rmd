@@ -1,0 +1,29 @@
+---
+title: "FARS data package"
+author: "Rafael Garcia"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This package can be used to read and manage data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+## Importing data
+
+FARS data can be imported using the `fars_read` function:
+
+```{r read}
+library(fars)
+file <- make_filename(2016)
+fars_data <- fars_read(file)
+```
