@@ -1,12 +1,12 @@
 Package: fars
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Fatality Analysis Reporting System manager
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Rafael García
+Maintainer: Rafael García <raggaraluz@gmail.com>
+Description: This package reads and summarizes US National Highway Traffic Safety Administration's
+Fatality Analysis Reporting System data
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Suggests: knitr,
