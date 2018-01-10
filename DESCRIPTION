@@ -5,8 +5,8 @@ Version: 0.1.0
 Author: Rafael García
 Maintainer: Rafael García <raggaraluz@gmail.com>
 Description: This package reads and summarizes US National Highway Traffic Safety Administration's
-    Fatality Analysis Reporting System data
-License: MIT
+    Fatality Analysis Reporting System data.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests: knitr,
