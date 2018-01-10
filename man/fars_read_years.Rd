@@ -19,7 +19,8 @@ Reads the FARS info for the list of years passed as parameter, returning them as
 In case of error reading the data for one year, it will give a warning and continue with the rest.
 }
 \examples{
-
+\dontrun{
 # Reads the data from 2013 to 2015
 fars_read_years(2013:2015)
+}
 }

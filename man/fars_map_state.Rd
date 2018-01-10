@@ -19,7 +19,7 @@ In case an invalid state is selected, the function throws and error. In case the
 are no accidents to plot, it shows a warning and no plot is created.
 }
 \examples{
-
+\dontrun{
 fars_map_state(1, 2014)
-
+}
 }

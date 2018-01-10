@@ -13,12 +13,13 @@
 #' @importFrom dplyr tbl_df
 #'
 #' @examples
-#'
+#' \dontrun{
 #' # Read data from 2013, in plain csv format
 #' a <- fars_read('accident_2013.csv')
 #'
 #' # Read data from 2014, with bz2-compressed csv format
-#' b <- fars_read('accident_2014.csv.bz2')
+#' b <- fars_read('accident_2014.csv.bz2)
+#' }
 #' @export
 fars_read <- function(filename) {
         if(!file.exists(filename))
@@ -63,9 +64,10 @@ make_filename <- function(year) {
 #' @importFrom dplyr mutate select
 #' @importFrom magrittr "%>%"
 #' @examples
-#'
+#' \dontrun{
 #' # Reads the data from 2013 to 2015
 #' fars_read_years(2013:2015)
+#' }
 #' @export
 fars_read_years <- function(years) {
         lapply(years, function(year) {
@@ -95,10 +97,10 @@ fars_read_years <- function(years) {
 #' @importFrom magrittr "%>%"
 #'
 #' @examples
-#'
+#' \dontrun{
 #' # Reads and summarize data from 2013 to 2015
 #' fars_summarize_years(2013:2015)
-#'
+#' }
 #' @export
 fars_summarize_years <- function(years) {
         dat_list <- fars_read_years(years)
@@ -124,9 +126,9 @@ fars_summarize_years <- function(years) {
 #' @importFrom graphics points
 #'
 #' @examples
-#'
+#' \dontrun{
 #' fars_map_state(1, 2014)
-#'
+#' }
 #' @export
 fars_map_state <- function(state.num, year) {
         filename <- make_filename(year)

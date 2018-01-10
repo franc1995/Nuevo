@@ -17,8 +17,8 @@ The value of the rest of the columns is the number of accident in the year given
 Reads data FARS data and calculate the number of accidents per month
 }
 \examples{
-
+\dontrun{
 # Reads and summarize data from 2013 to 2015
 fars_summarize_years(2013:2015)
-
+}
 }
