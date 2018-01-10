@@ -24,5 +24,4 @@ vignette('fars')
 ```
 
 ## Travis status
-This is the status of the travis build:
-[![Travis-CI Build Status](https://travis-ci.org/raggaraluz/master_sw_dev_c3.svg?branch=master)](https://travis-ci.org/raggaraluz/master_sw_dev_c3)
+This is the status of the travis build: [![Travis-CI Build Status](https://travis-ci.org/raggaraluz/master_sw_dev_c3.svg?branch=master)](https://travis-ci.org/raggaraluz/master_sw_dev_c3)
