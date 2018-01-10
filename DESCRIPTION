@@ -16,5 +16,6 @@ Imports: dplyr,
           readr,
           tidyr,
           maps,
-          graphics
+          graphics,
+          magrittr
 RoxygenNote: 6.0.1
