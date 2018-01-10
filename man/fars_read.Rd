@@ -19,3 +19,12 @@ Reads data from the US National Highway Traffic Safety Administration's
 \details{
 It returns and error in case the file does not exist
 }
+\examples{
+\dontrun{
+# Read data from 2013, in plain csv format
+a <- fars_read('accident_2013.csv')
+
+# Read data from 2014, with bz2-compressed csv format
+b <- fars_read('accident_2014.csv.bz2')
+}
+}
